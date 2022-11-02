@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;1,200&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navigation{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    align-items: center;
+    
+    padding: 30px 3rem 12px 3rem;
+
+    z-index: 1;
+}
+.navTitle h1{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar ul li{
+    list-style: none;
+    text-transform: capitalize;
+    margin: 0.7rem;
+}
+.navbar ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #000;
+    padding: 10px 15px 10px 15px;
+}
+
+.navbar ul li a:hover{
+    background-color: rgba(221, 218, 209, 0.192);
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.menubar{
+    color: #000;
+    font-size: 1.9rem;
+
+    display: none;
+}
+.mobile-menu{
+    display: none;
+}
+
+.custom-shape-divider-top-1667385044 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1667385044 svg {
+    position: relative;
+    display: block;
+    width: calc(116% + 1.3px);
+    height: 200px;
+}
+
+.custom-shape-divider-top-1667385044 .shape-fill {
+    fill: #FFFFFF;
+}
+
+
+
+.homeContent{
+    box-sizing: border-box;
+    width: 100%;
+    height: 520px auto;
+    padding: 100px 0 100px 0;
+    background: rgb(123,134,232);
+    background: linear-gradient(164deg, rgba(123,134,232,1) 0%, rgba(246,140,255,1) 52%, rgba(255,222,50,1) 100%);
+    color: #270942;
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.context{
+    line-height: 4rem;
+}
+.hContext{
+    font-weight: bold;
+    font-size: 3rem;
+}
+.pContext{
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+.home-img img{
+    max-width: 100%;
+}
+
+
+.About{
+    padding: 100px 0 100px 0;
+    width: 100%;
+    background-color: #eee;
+    align-items: center;
+}
+.titleAbout{
+    text-align: center;
+    padding-bottom: 2rem;
+    font-weight: 300;
+    
+}
+.AboutContxt{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.AboutImg img{
+    max-width: 60%;
+}
+
+.AboutMe{
+    max-width: 450px;
+    align-items: center;
+    line-height: 2rem;
+}
+.name{
+    font-size: 2rem;
+}
+.WorkName{
+    font-size: 1rem;
+    font-weight: 100;
+}
+span{
+    color: blueviolet;
+}
+
+.aboutContxt{
+    font-weight: 300;
+    font-size: .9rem;
+    padding-top: 1rem;
+    line-height: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn{
+    padding: 10px 25px 10px 25px;
+    cursor: pointer;
+}
+.btn a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+.Project{
+    padding: 100px 0 100px 0;
+    align-items: center;
+}
+.Project .projTtle{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+    padding-bottom: 2rem;
+}
+
+.projBoxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.box{
+    max-width: 350px;
+    height: 500px;
+    background-color: #eee;
+    margin: 1rem;
+
+    cursor: pointer;
+}
+.box:hover{
+    transform: translateY(2px);
+    transition: 0.6s;
+}
+.box img{
+    width: 100%;
+    flex-basis: 50%;
+}
+
+.box .projContxt{
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.projContxt .projName{
+    font-size: 1rem;
+    width: 80px;
+    text-align: center;
+    color: #000;
+
+}
+.projContxt .projStats{
+    background-color: aqua;
+    border-radius: 20px;
+    
+    font-size: 0.7rem;
+    color: #000;
+    width: 50px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.projDesc{
+    color: #000;
+    font-size: 0.9rem;
+    font-weight: 100;
+    text-align: justify;
+    
+    margin-bottom: 2rem;
+}
+.projCode{
+    display: flex;
+}
+.projCode .projCde{
+    background-color: rgb(230, 221, 221);
+    border-radius: 20pc;
+
+    margin: 0.2rem;
+    padding: 0.3rem 0 0.3rem 0;
+
+    width: 60px;
+    font-size: 0.7rem;
+    text-align: center;
+    color: #000;
+
+}
+
+
+.contact{
+    width: 100%;
+    padding: 100px 0 100px 0;
+    background-color: #eee;
+    text-align: center;
+    align-items: center;
+}
+.contactTitle{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+}
+
+form{
+    align-items: center;
+    background-color: rgba(187, 180, 180, 0.137);
+    border-radius: 20px;
+    padding: 100px 30px 100px 30px;
+    max-width: 550px;
+    margin: auto;
+
+}
+input[type=text]{
+    border: none;
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+
+    margin: 0.2rem;
+    font-size: 0.7rem;
+}
+
+textarea{
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+
+    margin-top: 0.2rem;
+    font-size: 0.7rem;
+    text-align: justify;
+}
+.submit{
+    border: none;
+    width: 150px;
+    padding: .4rem 0 .4rem 0;
+    background-color: rgb(83, 146, 218);
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    transition: transform 0.3s;
+}
+.submit:hover{
+    transform: scale(1.1);
+    background-color: rgba(83, 146, 218, 0.473);
+}
+
+
+footer{
+    width: 100%;
+    padding: 4px 0 4px 0;
+    background-color: rgb(34, 33, 33);
+
+    color: #fff;
+}
+.footer-cons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-icons{
+    display: flex;
+}
+.footer-icons i{
+    cursor: pointer;
+    font-size: 1rem;
+    color: #fff;
+    margin: 0.5rem;
+    background-color: rgba(169, 169, 169, 0.116);
+    padding: 10px 12px 10px 12px;
+    border-radius: 50%;
+}
+.fb i:hover{
+    color: aqua;
+    transition: 2s;
+}
+.ig i:hover{
+    color: violet;
+    transition: 2s;
+}
+.linked i:hover{
+    color: aqua;
+    transition: 2s;
+}
+
+@media screen and (max-width:900px) {
+    .navigation{
+        justify-content: space-between;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .navTitle h1{
+        font-size: 0.9rem;
+    }
+    .navbar{
+        display: none;
+    }
+    .menubar{
+        cursor: pointer;
+        display: block;
+    }
+
+    .menu ul li{
+        display: block;
+    }
+
+
+    .mobile-menu{
+        position: absolute;
+        background: rgba(44, 56, 45, 0.849);
+        right: -100%;
+        top: 0;
+        width: 200px;
+        height: 100vh;
+        display: block;
+        transition: all 0.3s ease;
+        z-index: 1;
+    }
+    .mobile-menu ul{
+        margin-top: 4rem;
+        align-items: center;
+    }
+    .mobile-menu ul li{
+        list-style: none;
+        display: block;
+        align-items: center;
+        margin: 20px;
+
+    }
+    .mobile-menu ul li a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 100;
+    }
+
+    .mobile-menu.active{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 150px;
+        height: 100vh;
+
+    }
+    .fatimes i{
+        padding: 18px 2px 0 10px;
+        font-size: 2rem;
+    }
+
+    .context{
+        margin-bottom: 3rem;
+    }
+    
+    .Project{
+        padding-left: 1.3rem;
+        padding-right: 1.3rem;
+    }
+
+    .contact{
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+    }
+
+}
+
+@media screen and (max-width: 537px) {
+    .homeContent{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .context{
+        line-height: 2.5rem;
+    }
+    .hContext{
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    .pContext{
+        font-size: 1.7rem;
+        font-weight: 200;
+    }
+    
+ 
+
+      .About{
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+      .AboutImg img{
+        max-width: 100%;
+      }
+      .AboutMe{
+        line-height: 1.8rem;
+      }
+      .name{
+        font-size: 1.4rem;
+      }
+      .WorkName{
+        font-size: 1rem;
+      }
+}
+
+
+
